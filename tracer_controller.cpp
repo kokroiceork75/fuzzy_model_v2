@@ -721,6 +721,7 @@ void initialize_pop() // wei初始化所有規則參數
 
 void robot_position(int k) // 抓真實機器人位置和角度
 {
+  // wei need change, 沒有考慮最初始 可以考慮加上限制 一開始直接給初始位置
   prev_robot_x = robot_x;
   prev_robot_y = robot_y;
   prev_robot_fi = robot_fi;
