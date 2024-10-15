@@ -1,3 +1,4 @@
+// 多目標模糊模型
 #include <assert.h>  
 #include <math.h>
 #include <stdio.h>  
@@ -13,7 +14,7 @@
 #define _in_varl  2   
 #define _out_varl 3
 #define _conq_varl 9
-#define ngen 700   /* 最大的世代數   */ 
+#define ngen 300   /* 最大的世代數   */ 
 #define popsize 40  /* 解的個數 */    ///202012
 #define new_row 40  /* 新產生的解的個數  */	
 #define _rule_number 10   /* 規則數 */ 
@@ -40,7 +41,7 @@
 #define stop_max_dis 1.5    /* 停止的距離  */
 #define stop_dis_narrow 0.5  /* ? */
 #define dwall   0.535   /*  希望離牆的值  */ ///0.285(車體邊緣) + 0.35(離牆距離)
-#define max_step 100      /* 最大步數  */  
+#define max_step 50      /* 最大步數  */  
 #define max_tune_step 30   /*  重置點的步數  */
 #define sensor_range 1 /* 感測的範圍:1m */
 #define _input_scale (1/sensor_range)  /* 給感測器讀值正規化的參數  */
